@@ -5,6 +5,8 @@ import { Register } from "./Register"; // Import the Register component
 import { LandingPage } from "./LandingPage"; // Import the LandingPage component
 import { Questionare } from "./Questionare"; // Import the LandingPage component
 import { CreateTeam } from './CreateTeam'; // Import the CreateTeam component
+import  Chatpage  from "./Chatpage";
+import  JoinTeamPage from "./JoinTeamPage"
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom'; // Import the BrowserRouter, Route, and Switch components from the react-router-dom package
 
 function App() {
@@ -23,8 +25,11 @@ function App() {
           <Route path="/landingpage" element={<LandingPage/>} />
           <Route path="/questionare" element={<Questionare/>} />
           <Route path="/createteam" element={<CreateTeam/>} />
+          <Route path="/Chatpage" element={<Chatpage/>} />
+          <Route path="/JoinTeamPage" element={<JoinTeamPage/>} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
+        
       </Router>
 
       

@@ -30,8 +30,7 @@ export const CreateTeam = () => {
                             <input type="text" value={answer4} onChange={(e) => setAnswer4(e.target.value)} style={{ height: '30px', width: '300px' }} />
                     </div>
                     <div>
-                            <button style={{ color: 'white' }}>Log In</button>
-                    </div>
+                            <button style={{ color: 'white' }}>Log In</button> </div>
             </div>
     </div>
     );

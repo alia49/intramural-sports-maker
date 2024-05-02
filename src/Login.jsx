@@ -1,16 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Login = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+    const navigate = useNavigate();
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
     }
 
+
+
     return (
+  
                 <div style={{marginTop: '-30px'}}>
+
                     <div>
                             <h2 style = {{fontSize: '30px', fontWeight: 'bold'}}> SportsZone</h2>
                            
@@ -25,6 +32,8 @@ export const Login = (props) => {
                 <button type="submit">Log In</button>
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>
+            <button onClick={() => navigate("/landingpage")}>Landing Page</button>
+           
         </div>
         </div>
     )
